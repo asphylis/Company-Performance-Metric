@@ -1,4 +1,3 @@
-# app.py
 from flask import Flask, request, jsonify, render_template
 import openai
 import configparser
@@ -8,9 +7,9 @@ config.read('config.ini')
 
 api_key = config["openai"]["api_key"]
 
+
 app = Flask(__name__)
 
-# Replace with your OpenAI API key
 openai.api_key = api_key
 
 @app.route('/')
