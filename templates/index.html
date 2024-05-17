@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Performance Query</title>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</head>
+<body>
+    <h1>Enter your query about company performance metrics:</h1>
+    <textarea id="userQuery" rows="4" cols="50"></textarea><br>
+    <button onclick="submitQuery()">Submit</button>
+
+    <h2>Structured JSON Output:</h2>
+    <pre id="jsonOutput"></pre>
+</body>
+</html>
